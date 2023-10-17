@@ -6,7 +6,7 @@ import Math.PrimeHelper;
 
 public class PE003 extends Print implements IProjectEuler {
     @Override
-    public void Run() {
+    public void run() {
 
         long number = 600851475143L;
         long lastPrime = 1;

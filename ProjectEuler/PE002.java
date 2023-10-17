@@ -5,7 +5,7 @@ import base.Print;
 
 public class PE002 extends Print implements IProjectEuler {
     @Override
-    public void Run() {
+    public void run() {
         int fibLimit = 4000000;
         int firstFib = 0;
         int secondFib = 1;

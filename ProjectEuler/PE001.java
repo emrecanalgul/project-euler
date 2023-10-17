@@ -6,7 +6,7 @@ import base.Print;
 public class PE001 extends Print implements IProjectEuler {
 
     @Override
-    public void Run() {
+    public void run() {
 
         int sum = 0;
         for (int i = 0; i < 1000; i++) {
