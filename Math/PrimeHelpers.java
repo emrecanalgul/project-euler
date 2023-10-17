@@ -1,6 +1,6 @@
 package Math;
 
-public class PrimeHelper {
+public class PrimeHelpers {
 
     public static long getNextPrime(long lastPrime) {
         for (var i = lastPrime + 1; i < Long.MAX_VALUE; i++)

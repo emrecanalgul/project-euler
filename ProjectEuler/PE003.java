@@ -2,7 +2,7 @@ package ProjectEuler;
 
 import base.IProjectEuler;
 import base.Print;
-import Math.PrimeHelper;
+import Math.PrimeHelpers;
 
 public class PE003 extends Print implements IProjectEuler {
     @Override
@@ -17,7 +17,7 @@ public class PE003 extends Print implements IProjectEuler {
             if (number % lastPrime == 0 && lastPrime > largestPrimeNumber) largestPrimeNumber = lastPrime;
 
 
-            lastPrime = PrimeHelper.getNextPrime(lastPrime);
+            lastPrime = PrimeHelpers.getNextPrime(lastPrime);
         }
 
         Println(largestPrimeNumber);
