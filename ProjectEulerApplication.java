@@ -4,7 +4,7 @@ import base.IProjectEuler;
 public class ProjectEulerApplication {
 
     public  static  void main(String[] args){
-        IProjectEuler projectEuler = new PE010();
+        IProjectEuler projectEuler = new PE011();
         projectEuler.run();
     }
 

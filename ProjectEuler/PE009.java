@@ -31,8 +31,6 @@ public class PE009 extends Print implements IProjectEuler {
             if (isBreak) break;
         }
 
-
-
         Println(productSum);
     }
 }
