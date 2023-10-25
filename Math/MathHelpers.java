@@ -13,11 +13,21 @@ public class MathHelpers {
         return product;
     }
 
-    public static BigInteger Factorial(int number) {
+    public static BigInteger factorial(int number) {
         BigInteger fact = new BigInteger("1");
         for (var i = number; i > 0; i--)
             fact = fact.multiply(new BigInteger(String.valueOf(i)));
 
         return fact;
+    }
+
+    public static long sumOfNumbers(BigInteger numbers) {
+        long sum = 0;
+        while (numbers.intValue() > 0) {
+            sum += numbers.intValue() % 10;
+            numbers = numbers.divide(new BigInteger("10"));
+        }
+
+        return sum;
     }
 }

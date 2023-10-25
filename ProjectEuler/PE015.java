@@ -13,8 +13,8 @@ public class PE015 extends Print implements IProjectEuler {
     @Override
     public void run() {
 
-        BigInteger fact20 = MathHelpers.Factorial(20);
-        BigInteger fact40 = MathHelpers.Factorial(40);
+        BigInteger fact20 = MathHelpers.factorial(20);
+        BigInteger fact40 = MathHelpers.factorial(40);
 
         BigInteger factMultiply = fact20.multiply(fact20);
         BigInteger factDivider = fact40.divide(factMultiply);
