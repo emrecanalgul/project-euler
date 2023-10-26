@@ -30,4 +30,23 @@ public class MathHelpers {
 
         return sum;
     }
+
+    public static int divisorSum(int number) {
+        int sum = 1;
+        int i = 2;
+        while (i < Math.ceil(Math.sqrt(number)))
+        {
+            if (number % i == 0)
+            {
+                sum += i;
+                sum += number / i;
+            }
+
+            i++;
+            if (i * i == number)
+                sum += i;
+        }
+
+        return sum;
+    }
 }

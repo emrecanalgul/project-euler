@@ -12,12 +12,10 @@ public class PE021 extends Print implements IProjectEuler {
         int amicableNumbersSum = 0;
         int maxNumber = 10000;
 
-        for (int i = 2; i < maxNumber; i++)
-        {
-            int firstDivisorSum = divisorSum(i);
-            if (firstDivisorSum > i && firstDivisorSum <= maxNumber)
-            {
-                int secondDivisorSum = divisorSum(firstDivisorSum);
+        for (int i = 2; i < maxNumber; i++) {
+            int firstDivisorSum = MathHelpers.divisorSum(i);
+            if (firstDivisorSum > i && firstDivisorSum <= maxNumber) {
+                int secondDivisorSum = MathHelpers.divisorSum(firstDivisorSum);
                 if (secondDivisorSum == i)
                     amicableNumbersSum += firstDivisorSum + i;
             }
@@ -27,16 +25,5 @@ public class PE021 extends Print implements IProjectEuler {
         Println(amicableNumbersSum);
     }
 
-    static int divisorSum(int number)
-    {
-        int divisourSum = 0;
-
-        for (int k = number - 1; k > 0; k--)
-        {
-            if (number % k == 0) divisourSum += k;
-        }
-
-        return divisourSum;
-    }
 
 }
